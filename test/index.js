@@ -1,11 +1,10 @@
+/* eslint-env node, mocha */
 const expect = require('chai').expect
 const update = require('../lib/').update
 const oldModel = require('./model.json')
 
 describe('lib', () => {
-
   describe('update', () => {
-
     it('should produce a model as an output', () => {
       const res = update(oldModel)
       expect(res).to.exist
@@ -23,9 +22,9 @@ describe('lib', () => {
       expect(uri.transformers[0].operation).to.equal('COLUMN')
       expect(uri.transformers[0].args).to.deep.equal([
         {
-          "name": "column",
-          "type": "column",
-          "value": "uri"
+          'name': 'column',
+          'type': 'column',
+          'value': 'uri'
         }
       ])
     })
@@ -34,14 +33,13 @@ describe('lib', () => {
       const collection = update(oldModel)[1]
       expect(collection.transformers).to.exist
       expect(collection.transformers.length).to.equal(1)
-      expect(collection.transformers[0].args[0].value).to.equal("Nom de la catégorie")
+      expect(collection.transformers[0].args[0].value).to.equal('Nom de la catégorie')
     })
 
-    it('should transofrm multiple transformers into one', () => {
+    it('should transform multiple transformers into one', () => {
       const istexQuery = update(oldModel)[6]
       expect(istexQuery.transformers.length).to.equal(1)
-      expect(istexQuery.transformers[0].args[0].value).to.equal("Dans ISTEX")
+      expect(istexQuery.transformers[0].args[0].value).to.equal('Dans ISTEX')
     })
   })
-
 })
