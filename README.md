@@ -30,5 +30,5 @@ right one.
 ## Usage
 
 ```bash
-$ lodex-update-model < model.json > new-model.json
+$ lodex-update-model model.json > new-model.json
 ```
