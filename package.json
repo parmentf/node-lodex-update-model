@@ -4,7 +4,7 @@
   "description": "Create a model from an older version of LODEX",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/parmentf/node-lodex-update-model/issues"
   },
-  "homepage": "https://github.com/parmentf/node-lodex-update-model#readme"
+  "homepage": "https://github.com/parmentf/node-lodex-update-model#readme",
+  "devDependencies": {
+    "chai": "4.0.0",
+    "eslint": "3.19.0",
+    "mocha": "3.4.2"
+  }
 }
