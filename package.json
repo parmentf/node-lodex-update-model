@@ -1,0 +1,24 @@
+{
+  "name": "lodex-update-model",
+  "version": "1.0.0",
+  "description": "Create a model from an older version of LODEX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parmentf/node-lodex-update-model.git"
+  },
+  "keywords": [
+    "lodex",
+    "script",
+    "update"
+  ],
+  "author": "François PARMENTIER",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/parmentf/node-lodex-update-model/issues"
+  },
+  "homepage": "https://github.com/parmentf/node-lodex-update-model#readme"
+}
