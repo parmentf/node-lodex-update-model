@@ -2,7 +2,10 @@
   "name": "lodex-update-model",
   "version": "1.0.0",
   "description": "Create a model from an older version of LODEX",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "bin": {
+    "lodex-update-model": "./index.js"
+  },
   "scripts": {
     "test": "mocha"
   },
